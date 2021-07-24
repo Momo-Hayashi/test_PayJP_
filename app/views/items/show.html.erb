@@ -1,0 +1,11 @@
+<h2>アイテム詳細</h2>
+  <p id="notice"><%= notice %></p>
+
+  <div class="show_item">
+    <%= @item.name %>
+    <%= @item.price %>円
+  </div>
+
+  <%= link_to "購入画面にすすむ", item_purchase_path(@item) %>
+  <%= link_to 'Edit', edit_item_path(@item) %>
+  <%= link_to 'Back', items_path %>
